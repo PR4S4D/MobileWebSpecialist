@@ -81,6 +81,10 @@ ul {
   color: #212121;
 }
 
+#menu_drawer {
+  display: none;
+}
+
 /*
  *
  * Top Level Navigation

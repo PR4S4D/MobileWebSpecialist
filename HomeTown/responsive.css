@@ -11,36 +11,59 @@
   order: 10;
 }
 
-@media screen and (max-width: 450px) {
-  .hero {
-    width: 50%;
+@media screen and (max-width: 550px) {
+  .header__title {
+    font-size: 1.75em;
+    vertical-align: bottom;
+  }
+  .header__logo {
+    height: 50px;
+    margin: 0;
   }
 
-  .top-news {
-    width: 50%;
+  #menu_drawer {
+    display: block;
+    float: right;
+    margin: 4% 4% 0 0;
   }
-
-  .scores {
+  .nav {
+    height: 0;
+    transition: height 1s;
   }
-
-  .weather {
+  .nav.open {
+    height: 240px;
+  }
+  .nav__item {
+    width: 100%;
+    line-height: 12px;
+  }
+  body {
+    font-size: 14px;
+  }
+  footer li {
+    width: 100%;
+    align-content: center;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 551px) {
   .header__title {
     font-size: 2em;
     vertical-align: bottom;
     padding: 2%;
   }
   .hero {
-    width: 60%;
+    width: 50%;
     order: 0;
   }
 
   .weather {
-    width: 40%;
+    width: 50%;
     order: 1;
+  }
+
+  .hero article {
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
