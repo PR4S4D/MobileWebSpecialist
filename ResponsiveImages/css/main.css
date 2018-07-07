@@ -28,6 +28,16 @@ img {
   width: 100%;
 }
 
+footer {
+  display: flex;
+  border-top: 1px grey solid;
+  padding-top: 2%;
+}
+
+footer a {
+  margin: auto;
+}
+
 @media screen and (max-width: 800px) {
   article {
     width: 100%;
